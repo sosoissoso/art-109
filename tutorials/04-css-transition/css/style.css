@@ -1,0 +1,114 @@
+body {
+    animation: change-color 9s infinite alternate;
+}
+
+@keyframes change-color {
+    0% {
+        background-color: rgb(173, 199, 207);
+    }
+
+    50% {
+        background-color: rgb(89, 108, 189);
+    }
+
+    100% {
+        background-color: rgb(23, 15, 100);
+    }
+}
+
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 100px;
+    animation: skew 3s infinite alternate;
+}
+
+
+@keyframes skew {
+    0% {
+        transform: skew(0deg, 0deg);
+    }
+
+    100% {
+        transform: skew(10deg, 70deg);
+    }
+}
+
+.silly_word{
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin: 100px;
+    transition: all 1s;
+}
+
+.silly_word:hover{
+    transform: scale(75);
+}
+
+
+.square {
+    background-color: rgb(39, 160, 85);
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    margin: 50px auto;
+    transition: all .3s;
+}
+
+.square:hover {
+    background-color: rgb(91, 0, 161);
+    transform: rotate(30deg);
+}
+
+.button-div {
+    text-align: center;
+
+}
+
+.button {
+    color: aliceblue;
+    background-color: rgb(80, 55, 79);
+    padding: 15px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all .5s;
+}
+
+.button:hover {
+    background-color: rgb(163, 66, 255);
+    transform: scale(1.5);
+    color: black
+}
+
+.minute {
+    background-color: rgb(238, 252, 176);
+    animation: stretch 5s infinite alternate;
+    width: 90px;
+}
+
+@keyframes stretch {
+    0% {
+        width: 100px;
+    }
+
+    100% {
+        width: 90vw;
+    }
+}
+
+.image{
+    animation: translate 4s infinite alternate;
+    margin: auto;
+}
+
+
+@keyframes rotate{
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(180deg);}
+}
+
+@keyframes translate{
+    0%{transform: translateX(0px);}
+    100%{transform: translateX(1000px);}
+}
