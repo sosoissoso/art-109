@@ -1,3 +1,26 @@
+/*Color palete*/
+
+
+:root {
+    --background-color-1: #575a4b;
+    --background-color-2: #2a2c24;
+    --box-hover-color: #b3c0a4;
+    --font-color: #ffffff;
+    --font-box-color: #241623;
+    --accent-color-1: #edafb8;
+    --accent-color-2: #466178;
+    --dark-color: #2c3e50;
+    --box-color: #edafb8;
+}
+
+
+
+
+
+
+
+
+
 /* css resets */
 * {
     margin: 0;
@@ -11,27 +34,33 @@ html{
 
 /* general css */
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-color:slategrey;
-    font-family:Helvetica, sans-serif;
+    background-color: var(--background-color-1);
+    font-family: "Concert One", sans-serif;
+    color: var(--font-color);
     font-size: 1.2rem;
     line-height: 1.5;
 }
 
 header{
-    background-image: url('../images/sunset-resize.png');
+   /* background-image: url('../images/sunset-resize.png');*/
     background-repeat: no-repeat;
     background-size: cover;
     padding: 1.5rem;
     margin-bottom: 3rem;
-    background-color:rgb(111, 141, 125);
+    background-color: var(--background-color-2);
     
     /* text-align: center; */
 }
 
 header h1{
 font-size: 2.5rem;
-color: white;
+color: var(--font-color);
+font-family: "Coiny", system-ui;
 
 }
 
@@ -42,10 +71,16 @@ nav {
 }
 
 nav a {
-    color: white;
+    color: var(--font-color);
+    font-family: "Coiny", system-ui;
     text-decoration: none;
     margin-left: 1rem;
     font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+   color: var(--box-color);
 }
 
 .about-section, .portfolio-section, .contact-section {
@@ -66,7 +101,7 @@ nav a {
 
 .portfolio-item {
     margin-bottom: 4rem;
-    background-color:rosybrown;
+    background-color: var(--box-color);
     padding: 1.5rem;
     text-align: justify;
     /* border: 2px solid rgb(161, 97, 97); */
@@ -85,10 +120,12 @@ nav a {
 
 .portfolio-item h3 {
     margin: 1rem 0;
+    color: var(--background-color-2);
 }
 
 .portfolio-item p {
     font-size: 1.2rem;
+    color: var(--background-color-2);
 }
 
 
@@ -99,13 +136,13 @@ nav a {
 
 .portfolio-section {
 
-    background-color:slategrey;
+    background-color: var(--background-color-1);
 
 }
 
 
 footer {
-    background-color:rgba(71, 92, 109, 0.877);
+    background-color: var(--background-color-2);
     padding: 1rem;
     text-align: center;
     color: white;
@@ -113,4 +150,17 @@ footer {
 
 footer p {
     font-size: 1rem;
+}
+
+
+/*style classes */
+
+.accent-1 {
+    color: var(--accent-color-1);
+    
+}
+
+.accent-2 {
+    color: var(--accent-color-1);
+    
 }
