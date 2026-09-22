@@ -1,0 +1,112 @@
+/*Color palete*/
+
+
+:root {
+    --background-color-1: #575a4b;
+    --background-color-2: #2a2c24;
+    --box-hover-color: #b3c0a4;
+    --font-color: #ffffff;
+    --font-box-color: #241623;
+    --accent-color-1: #edafb8;
+    --accent-color-2: #466178;
+    --dark-color: #2c3e50;
+    --box-color: #edafb8;
+}
+
+
+
+/* css resets */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* respect user font pref */
+html{
+    font-size: 100%;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* general css */
+
+body {
+
+    background-color: var(--background-color-2);
+    color: var(--font-color);
+    font-size: 1.5rem;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+header {
+
+    padding: 5rem 2rem;
+
+}
+
+header h1 {
+
+   text-shadow: -3px 5px 1.5px #575a4b;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: var(--font-color);
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+
+}
+
+nav a:hover {
+    color: var(--accent-color-1);
+}
+
+
+.about-content, .portfolio-content, .contact-content {
+
+    max-width: 60rem;
+    margin: 3rem auto;
+    
+
+}
+
+.about-content h2, .portfolio-content h2, .contact-content h2 {
+
+    margin: 2rem 0;
+    
+
+}
+
+
+footer {
+
+    padding: 1rem 2rem;
+}
+
+footer img {
+
+    display: inline-block;
+    max-height: 3rem;
+    margin: 0 .3rem;
+
+}
+
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+.flex-container-grid {
+    display: grid;
+    flex-wrap: wrap;
+  
+}
