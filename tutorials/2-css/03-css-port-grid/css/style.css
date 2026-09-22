@@ -82,14 +82,32 @@ nav a:hover {
 .navbar {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hamburger {
     display: none;
+    background: none;
+    border: none;
+    color: var(--font-color);
+    font-size: 3rem;
 }
 
 .nav-menu {
     list-style: none;
+    display:flex;
+    gap: 1rem;
+}
+
+
+@media (max-width: 750px) {
+    .hamburger {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
 }
 
 
