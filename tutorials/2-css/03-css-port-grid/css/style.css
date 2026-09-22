@@ -16,6 +16,16 @@
 
 
 /* css resets */
+
+/* Change box-sizing default to border-box */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+
 * {
     margin: 0;
     padding: 0;
@@ -40,12 +50,14 @@ body {
     font-size: 1.5rem;
     line-height: 1.5;
     font-family: 'Roboto', sans-serif;
+   /* text-align: justify;*/
 
 }
 
 header {
 
     padding: 5rem 2rem;
+    margin-bottom: 2rem;
 
 }
 
@@ -58,8 +70,8 @@ nav a {
 
     text-decoration: none;
     color: var(--font-color);
-    margin: 0 0.5rem;
-    transition: color 0.3s ease;
+  /*  margin: 0 0.5rem;
+    transition: color 0.3s ease;*/
 
 }
 
@@ -67,11 +79,45 @@ nav a:hover {
     color: var(--accent-color-1);
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hamburger {
+    display: none;
+}
+
+.nav-menu {
+    list-style: none;
+}
+
+
+
+
+
+
+main {
+    margin: 0;
+}
+
+@media (max-width: 1030px) {
+    main{
+        margin: 2rem;
+    }
+}
+
+@media (max-width: 750px) {
+    main{
+        margin: 1rem;
+    }
+}
+
 
 .about-content, .portfolio-content, .contact-content {
 
-    max-width: 60rem;
-    margin: 3rem auto;
+    max-width: 70rem;
+    margin: 0 auto 7rem auto;
     
 
 }
@@ -83,6 +129,30 @@ nav a:hover {
 
 }
 
+.portfolio-item  {
+
+    padding: 1rem;
+    background-color: var(--box-color);
+    color: var(--font-box-color-color);
+    border-radius: 0.5rem;
+}
+
+.portfolio-item p {
+
+    font-size: 1rem;
+
+}
+
+.portfolio-item h3 {
+
+    font-size: 1.3rem;
+
+}
+
+/*.portfolio-item img {
+
+    border-radius: 0.2rem;
+}*/
 
 footer {
 
@@ -106,7 +176,15 @@ footer img {
 }
 
 .flex-container-grid {
-    display: grid;
+    display: flex;
     flex-wrap: wrap;
-  
+    gap: 1rem;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.flex-item-grid {
+
+    flex: 1 0 17rem;
+
 }
