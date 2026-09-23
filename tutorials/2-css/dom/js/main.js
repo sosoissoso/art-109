@@ -12,7 +12,7 @@ const img3 = document.querySelector("#img3");
 
 //button toggle
 changeHeaderButton.addEventListener("click", () => {
-    header.innerHTML = "wow";
+    header.innerHTML = "Nothing";
 })
 
 
