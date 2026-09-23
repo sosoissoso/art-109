@@ -4,76 +4,38 @@
 const header = document.querySelector("#header");
 const changeHeaderButton = document.querySelector("#change-header-button");
 
+const changeThemeButton = document.querySelector("#change-theme");
+
+const img1 = document.querySelector("#img1");
+const img2 = document.querySelector("#img2");
+const img3 = document.querySelector("#img3");
+
+//button toggle
 changeHeaderButton.addEventListener("click", () => {
-        header.innerHTML = "wow. so impressive.";
+    header.innerHTML = "wow";
+})
 
 
+function changeButtonText() {
+    if(document.body.classList.contains("dark")) {
+        changeThemeButton.textContent = "Switch to light";
+    }
+    else {
+        changeThemeButton.textContent = "Switch to dark";
+    }
+}
+
+
+changeThemeButton.addEventListener("click", () => {
+    document.body.classList.toggle("dark");
+    changeButtonText();
 })
 
 
 
-
-
-document.querySelector("#image-0").addEventListener("click", function(){
-    document.querySelector("#image-0").style.visibility = "hidden"
+img1.addEventListener("click", () => {
+    img2.classList.remove("hidden");
 })
-
-document.querySelector("#image-1").addEventListener("click", function(){
-    document.querySelector("#image-1").style.visibility = "hidden"
+img2.addEventListener("click", () => {
+    img3.classList.remove("hidden");
 })
-
-document.querySelector("#image-2").addEventListener("click", function(){
-    document.querySelector("#image-2").style.visibility = "hidden"
-})
-
-document.querySelector("#image-3").addEventListener("click", function(){
-    document.querySelector("#image-3").style.visibility = "hidden"
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// console.log("hello there");
-
-// let pageTitle = document.querySelector("#page-title")
-// let headerTitle = document.querySelector("header")
-// let bodyTitle = document.querySelector("body")
-
-// setTimeout(function () {
-//     pageTitle.style.color = "pink";
-//     console.log("timeout works");
-// }, 3000);
-
-// // click event changes background colour
-// headerTitle.onclick = function () {
-//     console.log("clicked header")
-//     bodyTitle.style.backgroundColor = "black"
-// }
-
-//changing without storing in variables
-
-// setTimeout(function () {
-//     document.querySelector("#page-title").style.color = "pink";
-//     console.log("timeout works");
-// }, 3000);
-
-// // click event changes background colour
-// document.querySelector("header").onclick = function(){
-//     console.log("clicked header")
-//     document.querySelector("body").style.backgroundColor = "black"
-// }

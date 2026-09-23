@@ -1,78 +1,82 @@
 /*
-CSS RESETS:
- Border box reset:
-https://www.paulirish.com/2012/box-sizing-border-box-ftw/
- 62.5% Fix: https: //www.aleksandrhovhannisyan.com/blog/62-5-percent-font-size-trick/
+CSS RESETS
 */
 
-
-html {
-   box-sizing: border-box;
-   font-size: 62.5%;
-}
-
-
+/* Change box-sizing default to border-box */
 *,
-*:before,
-*:after {
-   box-sizing: inherit;
-   margin: 0;
-   padding: 0;
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 
-html,
-body {
-   height: 100%;
+/* Remove default spacing */
+* {
+  margin: 0;
+  padding: 0;
 }
 
 
-body {
-    font-size: 1.6rem;
-   /* font-size 1.6rem is now the same as 16px */
-   line-height: 1.6;
+/* Respect user font settings */
+html {
+  font-size: 100%;
+}
+
+
+/* Make images responsive */
+img {
+  max-width: 100%;
+  display: block;
 }
 
 header{
     padding: 50px;
     background-color: rgb(255, 36, 91);
-    text-align: center;
+    text-align: center; 
 }
 
 
 
 
-/* main{
+:root {
+   --bg: #eee;
+   --font: #222;
 
-} */
+}
 
-.image-div{
-   display: inline-block;
+body.dark {
+   --bg: #222;
+   --font: #eee;
+}
+
+
+body {
+   color: var(--font);
+   background-color: var(--bg);
+}
+
+main {
+   text-align: center;
+}
+
+.hidden {
+   display: none;
+}
+
+#img1 {
    position: absolute;
-   top: 50px;
-   right: 50px;
+   top: 15rem;
+   right: 50rem;
 }
 
-#image-0{
+#img2 {
    position: absolute;
-   top: 50px;
-   right: 50px;
+   top: 20rem;
+   left: 4rem;
 }
 
-#image-1{
+#img3 {
    position: absolute;
-   top: 250px;
-   right: 20px;
-}
-
-#image-2{
-   position: fixed;
-   top: 20px;
-   right: 150px;
-}
-
-#image-2{
-   position: fixed;
-   top: 200px;
-   right: 190px;
+   top: 30rem;
+   right: 30rem;
 }
