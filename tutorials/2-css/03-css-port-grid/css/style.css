@@ -43,6 +43,11 @@ img {
 
 /* general css */
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 body {
 
     background-color: var(--background-color-2);
@@ -101,13 +106,40 @@ nav a:hover {
 
 
 @media (max-width: 750px) {
+    .navbar {
+        align-items: flex-start;
+    }
+
+    .nav {
+        display: flex;
+        flex-direction: column;
+    }
+
     .hamburger {
         display: block;
+        align-self: flex-end;
     }
 
     .nav-menu {
         display: none;
     }
+
+    .nav-menu.active {
+        display: flex;
+        flex-direction: column ;
+        background-color: var(--font-color);
+        padding: 1rem;
+    }
+
+    .nav-menu a {
+        color: var(--box-color);
+    }
+
+    header {
+        padding: 1.5rem 2rem;
+    }
+
+
 }
 
 
@@ -180,11 +212,32 @@ footer {
 footer img {
 
     display: inline-block;
-    max-height: 3rem;
+    max-height: 2.5rem;
     margin: 0 .3rem;
 
 }
 
+@media (max-width: 750px) {
+    footer p {
+        font-size: 1.2rem;
+    }
+
+    footer img {
+        max-width: 2rem;
+        margin: 0 .2rem;
+    }
+}
+
+@media (max-width: 450px) {
+    footer p {
+        font-size: 1rem;
+    }
+    
+    footer img {
+        max-width: 1.5rem;
+        margin: 0 .1rem;
+    }
+}
 
 .flex-container {
     display: flex;
