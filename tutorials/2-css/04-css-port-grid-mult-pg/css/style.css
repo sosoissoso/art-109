@@ -188,7 +188,10 @@ main {
     padding: 2rem;
 }
 
-.project-content p 
+.project-content p {
+
+    padding: 0.5rem;
+}
 
 .portfolio-item  {
 
