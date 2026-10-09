@@ -39,7 +39,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    background-color: rgb(62, 109, 58);
+    background-color: rgb(238, 142, 154);
     /* Green background */
     color: #fff;
 }
@@ -73,7 +73,7 @@ body {
 .nav-links a.active {
     color: #e0e0e0;
     /* Lighter color for active/hover */
-    background-color: rgb(133, 212, 137);
+    background-color: rgb(214, 113, 125);
     /* Darker green background on hover */
     border-radius: 4px;
     /* Optional: rounded corners */
@@ -102,7 +102,7 @@ body {
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: rgb(48, 126, 61);
+        background-color: rgb(238, 142, 154);
         /* Green background for mobile view */
     }
 
@@ -157,8 +157,8 @@ footer a:hover {
 }
 
 .btn {
-    background: rgb(62, 194, 84);
-    color: rgb(255, 215, 215);
+    background: rgb(238, 142, 154);
+    color: #ffd7d7;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1.2rem;
@@ -231,7 +231,7 @@ footer a:hover {
 }
 
 .content-bg {
-    background: rgb(121, 135, 138);
+    background: rgb(255, 215, 215);
     padding: 30px;
 }
 
@@ -312,7 +312,7 @@ footer a:hover {
 /* FOOTER */
 
 footer {
-    background: rgb(231, 186, 196);
+    background: rgb(238, 142, 154);
 }
 
 .socials {
