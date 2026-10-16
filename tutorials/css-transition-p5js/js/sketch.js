@@ -21,8 +21,8 @@ function windowResized() {
 function draw() {
     //background(220);
     clear();
-    xPos = ((mouseX - xPos) + easing);
-    yPos = ((mouseY - yPos) + easing);
+    xPos = ((mouseX - xPos) * easing + xPos);
+    yPos = ((mouseY - yPos) * easing + yPos);
 
     drawThings(xPos, yPos);
 
@@ -33,14 +33,16 @@ function draw() {
 function drawThings(x, y) {
 
     //eyeballs
-    fill(255);
-    ellipse(x, y, 20, 40);
-    fill(255);
-    ellipse(x-15, y+5, 20, 40);
+    fill(117, 86, 40);
+    ellipse(x, y, 40, 40);
+
 
     //pupils
+    fill(240, 228, 58);
+    ellipse(x+10, y, 30, 10);
     fill(0);
-    ellipse(x+10, y, 5, 5);
-    ellipse(x-10, y-5, 5, 5);
+    ellipse(x+10, y-10, 5, 5);
+    fill(0);
+    ellipse(x-10, y-10, 5, 5);
 
 }
