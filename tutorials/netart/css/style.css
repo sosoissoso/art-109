@@ -20,3 +20,59 @@
     display: flex;
     flex-direction: column;
 }
+
+.pageThree {
+    background: url(../images/mouse.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageFour {
+    background: url(../images/eyecontact.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageFive {
+    background: url(../images/cropslam.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageSix {
+    background: url(../images/croprest.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageSeven {
+    background: url(../images/gma.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageEight {
+    background: url(../images/almost.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageNine {
+    background: url(../images/flowers.jpg) no-repeat;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageTen {
+    background: url(../images/home.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
