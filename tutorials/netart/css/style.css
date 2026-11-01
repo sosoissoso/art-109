@@ -1,0 +1,22 @@
+
+.index {
+    background: url(../images/scene1.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.pageOne {
+    background: url(../images/sky.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
+
+.pageTwo {
+    background: url(../images/eyecontact.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+}
